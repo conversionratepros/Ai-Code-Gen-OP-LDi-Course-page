@@ -288,5 +288,6 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
         width: 100%;
         font-size: 16px;
         line-height: 24px;
+        max-width: 258px;
     }
 }
