@@ -206,10 +206,20 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
 
     html body.cro-ki103-pdp section.cro-t-103-courseProspectus{
         margin-top: 40px;
+        padding: 80px 0;
     }
 
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-content{
         padding-right: 64px;
+    }
+
+    html body.cro-ki103-pdp .cro-t-103-programmeFee{
+        padding: 30px 0;
+    }
+
+    html body.cro-ki103-pdp .cro-t-103-accessible,
+    html body.cro-ki103-pdp #CourseReviews{
+        padding: 80px 0;
     }
 }
 
@@ -277,9 +287,7 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
         padding-left: 0;
         padding-right: 0;
     }
-}
 
-@media screen and (max-width: 767.98px) {
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-content .elementor-element.elementor-widget-button {
         width: 100%;
     }
