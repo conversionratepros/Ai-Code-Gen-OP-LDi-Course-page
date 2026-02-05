@@ -360,6 +360,20 @@
             });
         }
 
+        function addBannerAndProsBtn() {
+            waitForElement('h1.elementor-heading-title', function () {
+                var parent = document.querySelector('h1.elementor-heading-title').closest('.e-parent');
+                if (parent) {
+                    parent.classList.add('cro-t-103-banner');
+                }
+                document.querySelectorAll('.cro-t-103-banner .elementor-widget-container a span.elementor-button-text').forEach(function (e) {
+                    if (e.textContent.includes('Download prospectus')) {
+                        e.closest('a').classList.add('cro-t-103-prosBtn');
+                    }
+                });
+            });
+        }
+
         function addingSection(){
             waitForElement("#CourseOverview", function () {
                 if (!document.querySelector(".cro-t-103-courseProspectus")) {
@@ -382,6 +396,7 @@
             Object.entries(pageImages).forEach(function([urlPart, images]) {
                 if (currentUrl.includes(urlPart)) {
                     addClass("body", variation_name);
+                    addBannerAndProsBtn();
                     addingClassToSection();
                     addingSection();
 
@@ -403,7 +418,7 @@
         
         function croEventHandkler() {
             live(".cro-t-103-courseProspectus-inner .elementor-widget-container a", "click", function () {
-                document.querySelector(".cro-t-103-Pricing .cro-t-103-downloadProspectus").click();
+                document.querySelector(".cro-t-103-banner .cro-t-103-prosBtn").click();
             });
         }
         
