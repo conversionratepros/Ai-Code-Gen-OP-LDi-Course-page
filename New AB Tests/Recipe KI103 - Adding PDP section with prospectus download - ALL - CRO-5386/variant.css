@@ -73,6 +73,7 @@ html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner .elementor-widget-cont
         color: #FFFFFF;
         border-radius: 0px 0px 0px 0px;
         padding: 12px 24px 12px 24px;
+        font-family: 'ABC Social' !important;
 }
 
 html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner .elementor-widget-container a:hover {
@@ -82,10 +83,10 @@ html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner .elementor-widget-cont
 
 html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner h2.elementor-heading-title.elementor-size-default {
     color: #1E1A34;
-    font-family: Poppins;
+    font-family: "Frame Head" !important;
     font-size: 32px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 42px; /* 131.25% */
 }
 
@@ -95,8 +96,9 @@ html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner p.cro-t-103-subHeader{
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 27px;
     margin-bottom: 24px;
+    font-family: 'ABC Social';
 }
 
 html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner p.cro-t-103-pointHeader{
@@ -107,6 +109,7 @@ html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner p.cro-t-103-pointHeade
     font-weight: 700;
     line-height: 26px; /* 144.444% */
     margin-bottom: 24px;
+    font-family: 'ABC Social';
 }
 
 html body.cro-ki103-pdp .cro103-university-terms-right-icon-text-parent {
@@ -140,6 +143,7 @@ html body.cro-ki103-pdp .cro103-university-terms-right-text {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 144.444% */
+    font-family: 'ABC Social';
 }
 
 html body.cro-ki103-pdp section.cro-t-103-Accreditation {
@@ -252,7 +256,7 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
 
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner h2.elementor-heading-title.elementor-size-default {
         font-size: 24px;
-        line-height: 32px;
+        line-height: 34px;
     }
 
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner p{
@@ -278,7 +282,7 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
 
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-inner p.cro-t-103-subHeader{
         font-size: 16px;
-        line-height: 22px;
+        line-height: 24px;
     }
 }
 
@@ -294,7 +298,7 @@ html body.cro-ki103-pdp .cro-t-103-programmeFee .e-child>.waf-payment-plan-card:
 
     html body.cro-ki103-pdp .cro-t-103-courseProspectus-content .elementor-element.elementor-widget-button a {
         width: 100%;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 24px;
         max-width: 258px;
     }
