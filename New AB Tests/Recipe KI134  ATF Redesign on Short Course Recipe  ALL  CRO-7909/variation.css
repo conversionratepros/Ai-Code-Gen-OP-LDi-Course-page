@@ -79,6 +79,60 @@ html body.cro_ki134 .croki134-dental-education {
     z-index: 1;
 }
 
+html body.cro_ki134 .cro-sub_heading-parent +.has_eae_slider{
+    display: none;
+}
+
+html body.cro_ki134 .croki134-highlights-card {
+    background-color: #3F8FBC33;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-left-width: 4px;
+    border-left: 4px solid var(--LDI-25-Ocean-Teal--Light--Secondary, #0090C0);
+}
+
+html body.cro_ki134 .croki134-highlights-card-header {
+    color: var(--LDI-25-Dark-Blue, #030B3D);
+    font-family: "ABC Social";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+html body.cro_ki134 .croki134-highlights-card-text {
+    color: var(--LDI-25-Dark-Blue, #030B3D);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "ABC Social";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 27px */
+}
+
+html body.cro_ki134 .croki134-highlights-card-icon-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+html body.cro_ki134 .croki134-highlights-card-icon-text-parent {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+html body.cro_ki134 .croki134-highlights-card-icon {
+    width: 16px;
+    height: 27px;
+    position: relative;
+    top: -2px;
+}
+
+
 @media (min-width:768px) {
     html body.cro_ki134 .croki134-dental-education:not(.cro-mobile){
         display: block !important;
@@ -139,7 +193,34 @@ html body.cro_ki134 .croki134-dental-education {
         width: 100%;
         z-index: 0;
     }
+
+    html body.cro_ki134 .croki134-highlights-card-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    html body.cro_ki134 .croki134-highlights-card-header {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    html body.cro_ki134 .cro-mobile .croki134-dental-education-top-part .croki134-dental-education-text,
+    html body.cro_ki134 .cro-mobile .icon-1 .croki134-dental-education-text {
+         width: 100%;
+        max-width: 260px;
+    }
     
+}
+
+@media (min-width:768px){
+    html body.cro_ki134 .croki134-dental-education-top-part .croki134-dental-education-text {
+        position: relative;
+        top: 3px;
+    }
+
+    html body.cro_ki134 .croki134-dental-education:not(.cro-mobile) .icon-2 .croki134-dental-education-text{
+        max-width: 290px;
+    }
 }
 
 @media (max-width:600px) {

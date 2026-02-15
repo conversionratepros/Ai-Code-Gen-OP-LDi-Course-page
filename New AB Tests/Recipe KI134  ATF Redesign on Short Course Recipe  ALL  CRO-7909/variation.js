@@ -37,6 +37,74 @@
                 el.classList.add(cls);
             }
         }
+
+        var heroBannerUpdate = `<div class="croki134-highlights-card">
+    <div class="croki134-highlights-card-wrapper">
+        <div class="croki134-highlights-card-inner">
+            <div class="croki134-highlights-card-header">
+                Highlights
+            </div>
+            <div class="croki134-highlights-card-icon-text-parent">
+                <div class="croki134-highlights-card-icon-text text-1">
+                    <div class="croki134-highlights-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+            <g clip-path="url(#clip0_11_1840)">
+                <path d="M8.00141 22.0028C12.4205 22.0028 16.0028 18.4205 16.0028 14.0014C16.0028 9.58235 12.4205 6 8.00141 6C3.58235 6 0 9.58235 0 14.0014C0 18.4205 3.58235 22.0028 8.00141 22.0028Z" fill="#3F8FBC"/>
+                <path d="M6.6734 17.721L3.55469 14.8224L4.48042 13.8261L6.6734 15.8639L11.5222 11.3594L12.448 12.3557L6.6734 17.721Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_11_1840">
+                <rect width="16" height="27" fill="white"/>
+                </clipPath>
+            </defs>
+            </svg>
+                    </div>
+                    <div class="croki134-highlights-card-text">
+                        40 hours CPD for dentists, fully verifiable
+                    </div>
+
+                </div>
+                <div class="croki134-highlights-card-icon-text text-2">
+                    <div class="croki134-highlights-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+            <g clip-path="url(#clip0_11_1840)">
+                <path d="M8.00141 22.0028C12.4205 22.0028 16.0028 18.4205 16.0028 14.0014C16.0028 9.58235 12.4205 6 8.00141 6C3.58235 6 0 9.58235 0 14.0014C0 18.4205 3.58235 22.0028 8.00141 22.0028Z" fill="#3F8FBC"/>
+                <path d="M6.6734 17.721L3.55469 14.8224L4.48042 13.8261L6.6734 15.8639L11.5222 11.3594L12.448 12.3557L6.6734 17.721Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_11_1840">
+                <rect width="16" height="27" fill="white"/>
+                </clipPath>
+            </defs>
+            </svg>
+                    </div>
+                    <div class="croki134-highlights-card-text">
+                        12 months online access
+                    </div>
+                </div>
+                <div class="croki134-highlights-card-icon-text text-3">
+                    <div class="croki134-highlights-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+            <g clip-path="url(#clip0_11_1840)">
+                <path d="M8.00141 22.0028C12.4205 22.0028 16.0028 18.4205 16.0028 14.0014C16.0028 9.58235 12.4205 6 8.00141 6C3.58235 6 0 9.58235 0 14.0014C0 18.4205 3.58235 22.0028 8.00141 22.0028Z" fill="#3F8FBC"/>
+                <path d="M6.6734 17.721L3.55469 14.8224L4.48042 13.8261L6.6734 15.8639L11.5222 11.3594L12.448 12.3557L6.6734 17.721Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_11_1840">
+                <rect width="16" height="27" fill="white"/>
+                </clipPath>
+            </defs>
+            </svg>
+                    </div>
+                    <div class="croki134-highlights-card-text">
+                        Biomimetic and evidence-based principles you can apply immediately in daily practice.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
         
         var education = `<div class="croki134-dental-education" style="display: none;">
         <div class="croki134-dental-education-wrapper">
@@ -167,9 +235,6 @@
 
         </div>
     </div>`;
-
-
-    
         
         function init() {
             addClass("body", variation_name)
@@ -194,8 +259,27 @@
                     insertHtml(".cro-complete-text-parent", educationMob, "afterend");
                 }
             });
+
+            waitForElement('.has_eae_slider .elementor-widget-text-editor', function () {
+                document.querySelectorAll('.has_eae_slider .elementor-widget-text-editor').forEach(function (el) {
+                var parent = el.closest('.elementor-widget-text-editor');
+
+                if (
+                parent &&
+                    el.innerText.indexOf('Transform your composite dentistry with') !== -1
+                ) {
+                parent.classList.add('cro-sub_heading-parent');
+                    }
+                });
+                });
+
+            waitForElement(".cro-sub_heading-parent +.has_eae_slider", function () {
+                if (!document.querySelector(".croki134-highlights-card")) {
+                    insertHtml(".cro-sub_heading-parent +.has_eae_slider", heroBannerUpdate, "afterend");
+                }
+            });
+
         }
-        
        
         
         waitForElement('#CourseOverview', init);
